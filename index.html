@@ -99,7 +99,7 @@
     <div class="emoji">👶💖</div>
     <h1>Приємні новини</h1>
     <p>Натисни, щоб дізнатись більше!</p>
-    <button id="btnMore">Дізнатись більше</button>
+ <button id="btnMore">Дізнатись більше</button>
     <div class="extra-message" id="extraMsg">
       <p><strong>Ти скоро станеш дідусем!<br>Приготуйся до найприємнішої події у твоєму житті 😊</strong></p>
     </div>
@@ -107,12 +107,13 @@
 
   <script>
     const btn = document.getElementById('btnMore');
-    const extraImg = document.getElementById('extraImg');
+    const extraMsg = document.getElementById('extraMsg');
 
     btn.addEventListener('click', () => {
-      extraImg.classList.toggle('show');
-      btn.textContent = extraImg.classList.contains('show') ? 'Приховати' : 'Дізнатись більше';
+      extraMsg.classList.toggle('show');
+      btn.textContent = extraMsg.classList.contains('show') ? 'Приховати' : 'Дізнатись більше';
     });
   </script>
 </body>
 </html>
+
